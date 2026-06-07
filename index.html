@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kentt Condez — Frontend Developer and UI/UX Designer. Building intuitive digital products." />
+  <meta property="og:title" content="Kentt Condez — Frontend Developer & UI/UX Designer" />
+  <meta property="og:description" content="Building products that turn complicated experiences into simple, intuitive interfaces." />
+  <meta property="og:type" content="website" />
+  <title>Kentt Condez — Frontend Developer & UI/UX Designer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Progress bar -->
+  <div class="progress-bar" id="progress-bar" aria-hidden="true"></div>
+
+  <!-- ════════════════════════════════════
+       INTRO SEQUENCE
+  ════════════════════════════════════ -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__inner">
+      <div class="intro__row"><span class="intro__word">Kent</span></div>
+      <div class="intro__row"><span class="intro__word intro__word--em">Condez</span></div>
+    </div>
+    <div class="intro__rule"></div>
+  </div>
+
+  <!-- ════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════ -->
+  <header class="site-header" id="site-header" role="banner">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#hero" class="nav__logo" aria-label="Kent Condez — home">
+        Kent<span class="nav__logo-em">.</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="#projects" class="nav__link">Work</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ════════════════════════════════════
+         HERO
+    ════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Introduction">
+
+      <div class="hero__left">
+
+        <p class="hero__overline" data-intro-reveal data-intro-delay="0">
+          <span class="hero__overline-line" aria-hidden="true"></span>
+          <span>Frontend Developer &amp; UI/UX Designer</span>
+        </p>
+
+        <h1 class="hero__name">
+          <span class="hero__name-line" data-intro-reveal data-intro-delay="1">Kent</span>
+          <span class="hero__name-line hero__name-line--em" data-intro-reveal data-intro-delay="2">Condez</span>
+        </h1>
+
+        <p class="hero__desc" data-intro-reveal data-intro-delay="3">
+          I build products that turn complicated experiences into&nbsp;simple, intuitive interfaces — mobile apps, AI&nbsp;tools, and&nbsp;everything in&nbsp;between.
+        </p>
+
+        <ul class="hero__domains" aria-label="Focus areas" data-intro-reveal data-intro-delay="4">
+          <li>Mobile Apps</li>
+          <li>AI-Powered Tools</li>
+          <li>Web Platforms</li>
+          <li>Design Systems</li>
+        </ul>
+
+        <div class="hero__actions" data-intro-reveal data-intro-delay="5">
+          <a href="#projects" class="btn btn--primary" data-magnetic>
+            View Work
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="https://github.com/Kentcondez" class="btn btn--ghost" target="_blank" rel="noopener noreferrer" data-magnetic>GitHub ↗</a>
+          <a href="#" class="btn btn--ghost" data-magnetic>Resume ↗</a>
+        </div>
+
+      </div>
+
+      <div class="hero__right" aria-hidden="true">
+        <div class="hero__portrait" id="hero-portrait">
+<div class="hero__portrait-frame">
+            <img src="assetes/FormalPicture.png" alt="Kent Condez - Formal Portrait" class="hero__portrait-img" />
+          </div>
+          <p class="hero__portrait-caption">Kent Condez · LPU Cavite</p>
+        </div>
+      </div>
+
+      <p class="hero__bg-text" aria-hidden="true">KC</p>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-label">Scroll</span>
+      </div>
+
+    </section>
+
+    <!-- ════════════════════════════════════
+         TICKER
+    ════════════════════════════════════ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <div class="ticker__set">
+          <span>React</span><i class="ticker__dot"></i>
+          <span>Tailwind CSS</span><i class="ticker__dot"></i>
+          <span>TypeScript</span><i class="ticker__dot"></i>
+          <span>Flutter</span><i class="ticker__dot"></i>
+          <span>Node.js</span><i class="ticker__dot"></i>
+          <span>Figma</span><i class="ticker__dot"></i>
+          <span>Firebase</span><i class="ticker__dot"></i>
+          <span>Chrome Extensions</span><i class="ticker__dot"></i>
+          <span>AI APIs</span><i class="ticker__dot"></i>
+          <span>UI/UX Design</span><i class="ticker__dot"></i>
+        </div>
+        <div class="ticker__set" aria-hidden="true">
+          <span>React</span><i class="ticker__dot"></i>
+          <span>Tailwind CSS</span><i class="ticker__dot"></i>
+          <span>TypeScript</span><i class="ticker__dot"></i>
+          <span>Flutter</span><i class="ticker__dot"></i>
+          <span>Node.js</span><i class="ticker__dot"></i>
+          <span>Figma</span><i class="ticker__dot"></i>
+          <span>Firebase</span><i class="ticker__dot"></i>
+          <span>Chrome Extensions</span><i class="ticker__dot"></i>
+          <span>AI APIs</span><i class="ticker__dot"></i>
+          <span>UI/UX Design</span><i class="ticker__dot"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════
+         PROJECTS
+    ════════════════════════════════════ -->
+    <section class="projects" id="projects" aria-label="Projects">
+
+      <header class="section-header" data-reveal>
+        <div class="eyebrow">
+          <span class="eyebrow__num">01</span>
+          <span class="eyebrow__dash" aria-hidden="true"></span>
+          <span class="eyebrow__label">Selected Work</span>
+        </div>
+        <div class="section-header__row">
+          <h2 class="section-headline">Projects that <em>ship.</em></h2>
+          <a href="https://github.com/Kentcondez" class="link-arrow" target="_blank" rel="noopener noreferrer">
+            All Projects
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <!-- Featured: Ternova -->
+      <article class="proj-featured" data-reveal data-reveal-delay="1" aria-label="Ternova — Featured Project">
+        <div class="proj-featured__media">
+          <div class="proj-browser">
+            <div class="proj-browser__bar">
+              <span class="proj-browser__dot proj-browser__dot--r"></span>
+              <span class="proj-browser__dot proj-browser__dot--y"></span>
+              <span class="proj-browser__dot proj-browser__dot--g"></span>
+              <span class="proj-browser__address"></span>
+            </div>
+<div class="proj-browser__body">
+              <img src="assetes/Ternova.png" alt="Ternova App Screenshot" class="proj-browser__img" />
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-featured__info">
+          <span class="proj__idx" aria-hidden="true">01</span>
+          <span class="proj__badge">Featured Project</span>
+          <h3 class="proj__title">Ternova</h3>
+          <p class="proj__subtitle">AI-Powered Outfit Recommendation System</p>
+          <p class="proj__desc">
+            Generates personalized outfit suggestions using user preferences, real-time weather data, and AI analysis. Designed mobile-first — from onboarding flow to daily recommendation loop.
+          </p>
+          <hr class="proj__divider" aria-hidden="true" />
+          <dl class="proj__meta">
+            <div><dt>Role</dt><dd>Lead Developer &amp; UI Designer</dd></div>
+            <div><dt>Type</dt><dd>Mobile Application</dd></div>
+          </dl>
+          <ul class="proj__chips" aria-label="Technologies used">
+            <li>Flutter</li>
+            <li>Firebase</li>
+            <li>Groq</li>
+            <li>OpenWeather API</li>
+          </ul>
+          <a href="#" class="proj__link">
+            View Case Study
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Grid: 3 cards -->
+      <div class="proj-grid" role="list">
+
+<article class="proj-card" data-reveal data-reveal-delay="1" role="listitem" aria-label="Wadotisy">
+          <div class="proj-card__inner">
+            <span class="proj-card__idx" aria-hidden="true">02</span>
+            <div class="proj-card__media">
+              <img src="assetes/Wadotisy.png" alt="Wadotisy Chrome Extension" class="proj-card__img" />
+              <span>Chrome Extension</span>
+            </div>
+            <div class="proj-card__body">
+              <span class="proj-card__tag">AI · Browser · JS</span>
+              <h3 class="proj-card__title">Wadotisy</h3>
+              <p class="proj-card__tagline">AI Reading Assistant Extension</p>
+              <p class="proj-card__desc">Highlight any text online and get instant AI explanations in a browser side panel. Built around the way people actually read.</p>
+              <ul class="proj-card__tech" aria-label="Technologies">
+                <li>JavaScript</li><li>Chrome API</li><li>Node.js</li><li>Groq</li>
+              </ul>
+            </div>
+            <div class="proj-card__footer">
+              <span class="proj-card__role">Frontend Developer</span>
+              <span class="proj-card__arrow" aria-hidden="true">→</span>
+            </div>
+          </div>
+        </article>
+
+<article class="proj-card" data-reveal data-reveal-delay="2" role="listitem" aria-label="EngageAid">
+          <div class="proj-card__inner">
+            <span class="proj-card__idx" aria-hidden="true">03</span>
+            <div class="proj-card__media">
+              <img src="assetes/EngageAid.png" alt="EngageAid Platform" class="proj-card__img" />
+              <span>Web Platform</span>
+            </div>
+            <div class="proj-card__body">
+              <span class="proj-card__tag">Web · PHP · UX</span>
+              <h3 class="proj-card__title">EngageAid</h3>
+              <p class="proj-card__tagline">Service-Based Web Platform</p>
+              <p class="proj-card__desc">Connecting clients with service providers through clean booking flows — focused on browsing clarity and minimal friction.</p>
+              <ul class="proj-card__tech" aria-label="Technologies">
+                <li>PHP</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="proj-card__footer">
+              <span class="proj-card__role">Frontend Dev &amp; UI Designer</span>
+              <span class="proj-card__arrow" aria-hidden="true">→</span>
+            </div>
+          </div>
+        </article>
+
+<article class="proj-card" data-reveal data-reveal-delay="3" role="listitem" aria-label="SOGIE Legal Advisory System">
+          <div class="proj-card__inner">
+            <span class="proj-card__idx" aria-hidden="true">04</span>
+            <div class="proj-card__media">
+              <img src="assetes/SogieLegalAdvisorySysterm.png" alt="SOGIE Legal Advisory System" class="proj-card__img" />
+              <span>Expert System</span>
+            </div>
+            <div class="proj-card__body">
+              <span class="proj-card__tag">AI · Legal · System</span>
+              <h3 class="proj-card__title">SOGIE Legal</h3>
+              <p class="proj-card__tagline">Rule-Based Legal Advisory</p>
+              <p class="proj-card__desc">Legal guidance through forward-chaining rule-based reasoning and an interactive case intake workflow. Built for an AI course project.</p>
+              <ul class="proj-card__tech" aria-label="Technologies">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="proj-card__footer">
+              <span class="proj-card__role">Full-Stack Developer</span>
+              <span class="proj-card__arrow" aria-hidden="true">→</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         ABOUT
+    ════════════════════════════════════ -->
+    <section class="about" id="about" aria-label="About">
+
+      <div class="about__left">
+        <div class="eyebrow eyebrow--light" data-reveal>
+          <span class="eyebrow__num">02</span>
+          <span class="eyebrow__dash" aria-hidden="true"></span>
+          <span class="eyebrow__label">About</span>
+        </div>
+
+        <blockquote class="about__pull" data-reveal data-reveal-delay="1">
+          Third-year CS student who cares more about <strong>how things feel</strong> than just <strong class="em">how they work.</strong>
+        </blockquote>
+
+        <p class="about__body" data-reveal data-reveal-delay="2">
+          Genuinely drawn to frontend and UI/UX — not by default, but because the interface is where everything either lands or falls apart. A product can be technically perfect and still be confusing. That problem is interesting to me.<br><br>Most projects here started as rough ideas and ended up clean and functional. The gap between messy and polished is where I spend most of my time.
+        </p>
+
+        <div class="about__stats" data-reveal data-reveal-delay="3" aria-label="Quick stats">
+          <div class="stat">
+            <span class="stat__num">4<em>+</em></span>
+            <span class="stat__label">Projects Shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">3<em>rd</em></span>
+            <span class="stat__label">Year CS Student</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">2<em>+</em></span>
+            <span class="stat__label">Years in Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__right">
+        <div class="about__edu" data-reveal>
+          <div class="eyebrow">
+            <span class="eyebrow__dash" aria-hidden="true"></span>
+            <span class="eyebrow__label">Education</span>
+          </div>
+          <h3 class="about__degree">BS Computer Science</h3>
+          <p class="about__school">Lyceum of the Philippines University — Cavite</p>
+          <ul class="about__courses" aria-label="Relevant coursework">
+            <li>Web Development</li>
+            <li>Software Engineering</li>
+            <li>Data Structures &amp; Algorithms</li>
+            <li>Artificial Intelligence</li>
+            <li>Database Management</li>
+          </ul>
+        </div>
+
+        <div class="about__philosophy" data-reveal data-reveal-delay="1">
+          <p class="philosophy__label">Design Thinking</p>
+          <blockquote class="philosophy__quote">
+            "Great products aren't defined by how many features they have — but by how quickly users understand and benefit from them."
+          </blockquote>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ════════════════════════════════════
+         SKILLS
+    ════════════════════════════════════ -->
+    <section class="skills" id="skills" aria-label="Skills and capabilities">
+
+      <header class="section-header section-header--left" data-reveal>
+        <div class="eyebrow">
+          <span class="eyebrow__num">03</span>
+          <span class="eyebrow__dash" aria-hidden="true"></span>
+          <span class="eyebrow__label">Capabilities</span>
+        </div>
+        <h2 class="section-headline">Tools of the <em>craft.</em></h2>
+      </header>
+
+      <div class="skills__grid">
+
+        <div class="skill-col" data-reveal data-reveal-delay="1">
+          <h3 class="skill-col__cat">Frontend</h3>
+          <ul class="skill-col__list">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            <li>React</li><li>Tailwind CSS</li><li>TypeScript</li>
+          </ul>
+        </div>
+
+        <div class="skill-col" data-reveal data-reveal-delay="2">
+          <h3 class="skill-col__cat">BacKentd</h3>
+          <ul class="skill-col__list">
+            <li>Node.js</li><li>Express.js</li><li>PHP</li>
+          </ul>
+        </div>
+
+        <div class="skill-col" data-reveal data-reveal-delay="3">
+          <h3 class="skill-col__cat">Mobile</h3>
+          <ul class="skill-col__list">
+            <li>Flutter</li><li>Firebase</li>
+          </ul>
+        </div>
+
+        <div class="skill-col" data-reveal data-reveal-delay="4">
+          <h3 class="skill-col__cat">Design</h3>
+          <ul class="skill-col__list">
+            <li>Figma</li><li>Canva</li><li>UI/UX</li><li>Prototyping</li>
+          </ul>
+        </div>
+
+        <div class="skill-col" data-reveal data-reveal-delay="5">
+          <h3 class="skill-col__cat">Tools</h3>
+          <ul class="skill-col__list">
+            <li>Git</li><li>GitHub</li><li>VS Code</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         PHILOSOPHY BREAK
+    ════════════════════════════════════ -->
+    <section class="philosophy-break" id="philosophy" aria-label="Design philosophy">
+      <blockquote class="philosophy-break__quote" data-reveal>
+        "Great products are not defined by <strong>how many features they have,</strong> but by how quickly users <strong>understand</strong> and benefit from them."
+      </blockquote>
+      <p class="philosophy-break__attr" data-reveal data-reveal-delay="1">Design Philosophy</p>
+    </section>
+
+    <!-- ════════════════════════════════════
+         CONTACT
+    ════════════════════════════════════ -->
+    <section class="contact" id="contact" aria-label="Contact">
+
+      <div class="contact__left">
+        <div class="eyebrow" data-reveal>
+          <span class="eyebrow__num">04</span>
+          <span class="eyebrow__dash" aria-hidden="true"></span>
+          <span class="eyebrow__label">Let's Talk</span>
+        </div>
+        <h2 class="contact__headline" data-reveal data-reveal-delay="1">
+          Good work starts<br>with a <em>conversation.</em>
+        </h2>
+        <p class="contact__body" data-reveal data-reveal-delay="2">
+          Whether it's a project, a question, or just to connect — always happy to talk design, frontend, or whatever I'm currently building.
+        </p>
+        <a href="mailto:Kent@email.com" class="contact__email" data-reveal data-reveal-delay="3">Kent@email.com</a>
+      </div>
+
+      <div class="contact__right">
+        <a href="https://github.com/Kentcondez" class="contact-row" target="_blank" rel="noopener noreferrer" data-reveal data-reveal-delay="1">
+          <div class="contact-row__info">
+            <span class="contact-row__platform">GitHub</span>
+            <span class="contact-row__value">github.com/Kentcondez</span>
+          </div>
+          <span class="contact-row__arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="https://linkedin.com/in/Kentcondez" class="contact-row" target="_blank" rel="noopener noreferrer" data-reveal data-reveal-delay="2">
+          <div class="contact-row__info">
+            <span class="contact-row__platform">LinkedIn</span>
+            <span class="contact-row__value">linkedin.com/in/Kentcondez</span>
+          </div>
+          <span class="contact-row__arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="#" class="contact-row" data-reveal data-reveal-delay="3">
+          <div class="contact-row__info">
+            <span class="contact-row__platform">Resume</span>
+            <span class="contact-row__value">Download PDF</span>
+          </div>
+          <span class="contact-row__arrow" aria-hidden="true">↓</span>
+        </a>
+        <a href="mailto:Kent@email.com" class="contact-row" data-reveal data-reveal-delay="4">
+          <div class="contact-row__info">
+            <span class="contact-row__platform">Email</span>
+            <span class="contact-row__value">Kent@email.com</span>
+          </div>
+          <span class="contact-row__arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <span class="site-footer__logo">Kent<em>.</em></span>
+    <p class="site-footer__copy">© 2024 Kent Condez. Designed &amp; built with intent.</p>
+    <nav aria-label="Footer navigation">
+      <ul class="site-footer__nav" role="list">
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+<script src="main.js"></script>
+</body>
+</html>
