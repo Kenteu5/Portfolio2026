@@ -309,6 +309,17 @@ function initPortraitParallax() {
 }
 
 /* ─────────────────────────────────────
+   9. FOOTER YEAR
+   Dynamically update the year.
+───────────────────────────────────── */
+function initFooterYear() {
+  const yearEl = $('#year');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+}
+
+/* ─────────────────────────────────────
    INIT — Run all modules
 ───────────────────────────────────── */
 ready(() => {
@@ -320,4 +331,5 @@ ready(() => {
   initHeroEntrance();
   initMagneticButtons();
   initPortraitParallax();
+  initFooterYear();
 });
