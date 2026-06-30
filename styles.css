@@ -1495,7 +1495,7 @@ hr { border: none; }
 .skill-col__list li:hover { color: var(--color-maroon); }
 
 /* ─────────────────────────────────────
-   17. PHILOSOPHY BREAK
+   17. HOW I BUILD
 ───────────────────────────────────── */
 .philosophy-break {
   background: var(--color-maroon);
@@ -1543,6 +1543,13 @@ hr { border: none; }
 }
 
 /* ─────────────────────────────────────
+   18. .how-i-build__grid { grid-template-columns: repeat(2, 1fr); }
+
+@media (max-width: 768px) {
+  .how-i-build__grid { grid-template-columns: 1fr; }
+}
+
+/* ------------------------------------
    18. CONTACT SECTION
 ───────────────────────────────────── */
 .contact {
