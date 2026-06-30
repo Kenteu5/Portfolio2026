@@ -1497,59 +1497,87 @@ hr { border: none; }
 /* ─────────────────────────────────────
    17. HOW I BUILD
 ───────────────────────────────────── */
-.philosophy-break {
-  background: var(--color-maroon);
+.how-i-build {
   padding: var(--space-28) var(--page-pad);
+  background: var(--color-bg);
+}
+
+.how-i-build__header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-12);
 }
 
-.philosophy-break__quote {
+.how-i-build__title {
   font-family: var(--font-display);
-  font-size: clamp(1.4rem, 3vw, 2.4rem);
-  font-weight: 400;
-  font-style: italic;
-  color: rgba(248,245,240,0.86);
-  max-width: 62ch;
-  line-height: 1.52;
-  margin-bottom: var(--space-6);
-}
-
-.philosophy-break__quote strong {
-  font-style: normal;
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
   font-weight: 700;
-  color: #fff;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: var(--color-ink);
 }
 
-.philosophy-break__attr {
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: rgba(248,245,240,0.32);
+.how-i-build__title em {
+  color: var(--color-maroon);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.how-i-build__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.build-card {
+  background: var(--color-bg-alt);
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  transition: background var(--dur-med);
+}
+
+.build-card:hover {
+  background: var(--color-maroon-pale);
+}
+
+.build-card__icon {
+  width: 44px;
+  height: 44px;
+  background: var(--color-maroon);
+  border-radius: var(--radius);
   display: flex;
   align-items: center;
-  gap: var(--space-3);
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(110,23,38,0.2);
+  transition: transform var(--dur-fast), box-shadow var(--dur-fast);
 }
 
-.philosophy-break__attr::before,
-.philosophy-break__attr::after {
-  content: '';
-  display: block;
-  width: 28px; height: 1px;
-  background: rgba(248,245,240,0.2);
+.build-card:hover .build-card__icon {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(110,23,38,0.28);
+}
+
+.build-card__title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  letter-spacing: -0.01em;
+}
+
+.build-card__desc {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--color-ink-3);
+  line-height: 1.65;
 }
 
 /* ─────────────────────────────────────
-   18. .how-i-build__grid { grid-template-columns: repeat(2, 1fr); }
-
-@media (max-width: 768px) {
-  .how-i-build__grid { grid-template-columns: 1fr; }
-}
-
-/* ------------------------------------
    18. CONTACT SECTION
 ───────────────────────────────────── */
 .contact {
@@ -1718,6 +1746,8 @@ hr { border: none; }
 
   .skills__grid { grid-template-columns: repeat(3, 1fr); }
 
+  .how-i-build__grid { grid-template-columns: 1fr 1fr; }
+
   .contact { grid-template-columns: 1fr; gap: var(--space-12); }
 }
 
@@ -1728,6 +1758,8 @@ hr { border: none; }
 
   .proj-grid { grid-template-columns: 1fr; }
   .skills__grid { grid-template-columns: repeat(2, 1fr); }
+
+  .how-i-build__grid { grid-template-columns: 1fr; }
 
   .section-header__row { flex-direction: column; align-items: flex-start; }
 
